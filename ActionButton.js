@@ -83,7 +83,7 @@ export default class ActionButton extends Component {
         zIndex: this.props.zIndex,
         justifyContent: this.props.verticalOrientation === "up"
           ? "flex-end"
-          : "flex-start"
+          : "flex-start",
       }
     ];
   }
@@ -173,7 +173,7 @@ export default class ActionButton extends Component {
       height: this.props.size,
       borderRadius: this.props.size / 2,
       alignItems: "center",
-      justifyContent: "center"
+      justifyContent: "center",
     };
 
     const Touchable = getTouchableComponent(this.props.useNativeFeedback);
@@ -372,7 +372,7 @@ ActionButton.defaultProps = {
   resetToken: null,
   active: false,
   bgColor: "transparent",
-  bgOpacity: 1,
+  bgOpacity: 0,
   buttonColor: "rgba(0,0,0,1)",
   buttonTextStyle: {},
   buttonText: "+",
@@ -399,11 +399,11 @@ ActionButton.defaultProps = {
 const styles = StyleSheet.create({
   overlay: {
     position: "absolute",
-    bottom: 0,
+    bottom: 16,
     left: 0,
-    right: 0,
+    right: -10,
     top: 0,
-    backgroundColor: "transparent"
+    backgroundColor: "transparent",
   },
   btnText: {
     marginTop: -4,
