@@ -203,13 +203,13 @@ const styles = StyleSheet.create({
     paddingHorizontal: 8,
     borderRadius: 3,
     borderWidth: StyleSheet.hairlineWidth,
-    borderColor: "#eee",
-    backgroundColor: "white",
+    borderColor: "transparent",
+    backgroundColor: "transparent",
     height: TEXT_HEIGHT
   },
   text: {
     flex: 1,
     fontSize: 12,
-    color: "#444"
+    color: "transparent"
   }
 });
